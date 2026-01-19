@@ -1,5 +1,5 @@
-class TimezController < ApplicationController
+class TymezController < ApplicationController
   def index
-    @tymez = ["good", "times", "bad", "times", "you", "know", "ive", "had", "my", "share"]
+    @tymez = Tyme.all
   end
 end

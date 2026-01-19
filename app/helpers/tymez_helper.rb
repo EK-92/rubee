@@ -1,2 +1,2 @@
-module TimezHelper
+module TymezHelper
 end

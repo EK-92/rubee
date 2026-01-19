@@ -1,6 +1,6 @@
 require "test_helper"
 
-class TimezControllerTest < ActionDispatch::IntegrationTest
+class TymezControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
