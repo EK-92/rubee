@@ -1,0 +1,2 @@
+class Tyme < ApplicationRecord
+end
