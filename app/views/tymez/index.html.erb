@@ -1,5 +1,5 @@
 <ul>
   <% @tymez.each do |time| %>
-    <li><%= time.name %>, <%= time.description %>, for <%= time.length %> mins</li>
+    <li><%= time.name %>, <%= time.description %>, <%= timelessness(time) %></li>
   <% end %>
 </ul>
