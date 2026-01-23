@@ -1,5 +1,8 @@
 <ul>
-  <% @tymez.each do |time| %>
-    <li><%= time.name %>, <%= time.description %>, <%= timelessness(time) %></li>
+  <% @tymez.each do |tyme| %>
+    <li>
+      <%= link_to tyme.name, tyme%>
+      , <%= tyme.description %>, <%= timelessness(tyme) %>
+    </li>
   <% end %>
 </ul>
