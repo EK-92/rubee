@@ -1,0 +1,4 @@
+<%= link_to "All times", games_path%>
+<p><%= @game.name %>, <%= @game.description %>, <%= timelessness(@game) %></p>
+
+<%= link_to "edit", edit_game_path(@game)%>

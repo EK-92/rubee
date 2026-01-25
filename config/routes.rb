@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
-  root "tymez#index"
+  root "games#index"
   get "up" => "rails/health#show", as: :rails_health_check
 
-  get "tymez" => "tymez#index"
-  get "tymez/new" => "tymez#new"
-  get "tymez/:id" => "tymez#show", as: "tyme"
-  get "tymez/:id/edit" => "tymez#edit", as: "edit_tyme"
 
-  patch "tymez/:id" => "tymez#update"
+  resources :games
+  # get "games" => "games#index"
+  # post "games" => "games#index"
+  # get "games/new" => "games#new"
+  # get "games/:id" => "games#show", as: "game"
+  # get "games/:id/edit" => "games#edit", as: "edit_game"
+
+  # patch "games/:id" => "games#update"
 end
