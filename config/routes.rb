@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   root "tymez#index"
   get "up" => "rails/health#show", as: :rails_health_check
-  get "tymes" => "tymez#index"
+
+  get "tymez" => "tymez#index"
+  get "tymez/new" => "tymez#new"
   get "tymez/:id" => "tymez#show", as: "tyme"
-  # Defines the root path route ("/")
-  # root "posts#index"
+  get "tymez/:id/edit" => "tymez#edit", as: "edit_tyme"
+
+  patch "tymez/:id" => "tymez#update"
 end
