@@ -1,9 +1,12 @@
 module GamesHelper
-  def timelessness(game)
-    if game.nonexistent?
-      "didn't happen"
+  def gamestate(game)
+    if game.neverplayed?
+      "Start"
     else
-      "happened"
+      "Continue"
     end
+  end
+  def ptlength(game)
+    game.playthrough?
   end
 end

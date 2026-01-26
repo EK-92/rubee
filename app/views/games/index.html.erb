@@ -2,7 +2,7 @@
   <% @games.each do |game| %>
     <li>
       <%= link_to game.name, game%>
-      , <%= game.description %>, <%= timelessness(game) %>
+      <p><%= game.description %></p>
     </li>
   <% end %>
 </ul>

@@ -1,4 +1,7 @@
-<%= link_to "All times", games_path%>
-<p><%= @game.name %>, <%= @game.description %>, <%= timelessness(@game) %></p>
+<%= link_to "All games", games_path%>
+<h3><%= @game.name %></h3>
+<p><%= @game.description %></p>
+<p><%= gamestate(@game) %></p>
+<p>Playthrough time: <%= ptlength(@game) %></p>
 
 <%= link_to "edit", edit_game_path(@game)%>
