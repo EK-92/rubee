@@ -7,9 +7,9 @@ class Game < ApplicationRecord
     when 30..99
       'average'
     when 100
-      'long'
+      'prolonged'
     else
-      'short'
+      'brief'
     end
   end
 end
